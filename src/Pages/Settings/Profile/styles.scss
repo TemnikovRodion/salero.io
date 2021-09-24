@@ -1,0 +1,6 @@
+.profile-wrapper {
+  display: grid;
+  grid-template-columns: minmax(320px, 385px) 1fr;
+  padding: 25px;
+  height: 100%;
+}

@@ -1,0 +1,53 @@
+.profile-info-wrapper {
+  padding: 47px 23px;
+  margin: 0 10px;
+  border-right: 1px solid rgb(243, 243, 243);
+
+  .profile-info-title-wrapper {
+    margin-bottom: 40px;
+
+    .profile-info-title-shop-status {
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      justify-content: flex-start;
+      align-items: center;
+      column-gap: 8px;
+    }
+  }
+
+  .profile-info-subscription-wrapper {
+    .profile-item-subscription-group {
+      display: flex;
+      justify-content: space-between;
+      height: 50px;
+      align-items: center;
+      width: 100%;
+    }
+
+    .profile-info-subscription-divider {
+      margin: 0;
+    }
+  }
+
+  .profile-info-key-wrapper {
+    display: flex;
+    height: 80px;
+    column-gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+
+    .profile-info-key {
+      max-width: 200px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+
+  .profile-info-pricing-wrapper {
+    display: flex;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+  }
+}

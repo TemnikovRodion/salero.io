@@ -1,0 +1,11 @@
+.header-logo {
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  width: $side-nav-width;
+  overflow: hidden;
+
+  &.header-logo-small {
+    width: $side-nav-folded;
+  }
+}

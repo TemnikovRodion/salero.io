@@ -1,0 +1,20 @@
+.login-form {
+  width: 400px;
+}
+
+.login-form-title {
+  display: grid;
+  row-gap: 8px;
+  margin-bottom: 34px;
+}
+
+.login-lable-wapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login-lable-forgot-password {
+  font-size: 12px;
+}

@@ -1,0 +1,36 @@
+.integration-steps-wrapper {
+  padding-right: 15px;
+
+  .integration-steps-card {
+    .integration-steps-card-title {
+      margin-bottom: 1.5rem !important;
+    }
+
+    .integration-steps-card-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 700px;
+
+      .integration-steps-card-body-info {
+        padding: 40px 0;
+        display: grid;
+        row-gap: 20px;
+      }
+    }
+  }
+}
+
+.itegration-steps-image {
+  max-width: 500px;
+  padding: 20px 0;
+  margin: 0 auto;
+}
+
+.ant-steps-item-active {
+  font-weight: 500;
+}
+
+.ant-steps-icon {
+  font-weight: 500;
+}

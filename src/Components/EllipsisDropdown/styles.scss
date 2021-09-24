@@ -1,0 +1,12 @@
+.ellipsis-dropdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  .ellipsis-dropdown-icon {
+    font-size: 24px;
+    font-weight: bold;
+    transform: rotate(90deg);
+  }
+}

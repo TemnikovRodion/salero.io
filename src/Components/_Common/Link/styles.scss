@@ -1,0 +1,36 @@
+.link {
+  opacity: 0.9;
+
+  &.black {
+    color: $gray-dark;
+
+    &:hover {
+      color: $blue;
+    }
+  }
+
+  &.blue {
+    color: $blue;
+  }
+
+  &.red {
+    color: $red;
+  }
+
+  &.white {
+    opacity: 1;
+    color: $white;
+  }
+
+  &.normal {
+    font-weight: 400;
+  }
+
+  &.bold {
+    font-weight: 700;
+  }
+
+  &.medium {
+    font-weight: 500;
+  }
+}

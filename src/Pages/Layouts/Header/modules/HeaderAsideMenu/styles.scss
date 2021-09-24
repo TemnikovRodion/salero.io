@@ -1,0 +1,11 @@
+.header-aside-menu {
+  .header-aside-menu-icon {
+    font-size: 1.25rem;
+    cursor: pointer !important;
+    transition: $default-transition;
+
+    &:hover {
+      color: $blue;
+    }
+  }
+}

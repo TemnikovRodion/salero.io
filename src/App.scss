@@ -1,0 +1,8 @@
+.app-content-wrapper {
+  width: calc(100% - #{$side-nav-width});
+  transition: $default-transition;
+
+  &.small {
+    width: calc(100% - #{$side-nav-folded});
+  }
+}

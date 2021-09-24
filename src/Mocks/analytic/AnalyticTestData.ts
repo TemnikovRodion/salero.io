@@ -1,0 +1,51 @@
+import { AnalyticModel } from '@/Models/Contract';
+import { Images } from '@/Static';
+import { ProductCategory } from '@/Models/Enums';
+
+export const analyticTestData: AnalyticModel[] = [
+  {
+    name: 'Отбеливающие полоски для зубов Crest 3D White Professional Effects',
+    nmid: '15726283',
+    rating: ProductCategory.A,
+    ratingNumber: 100,
+    sales_amount_per_month: 418999,
+    discount: 42,
+    price: 7900,
+    price_with_discount: 4555,
+    units_sales_per_month: 91,
+    redemption: 100,
+    turn_over: 14,
+    image: Images.Test.Analytic.Analytic1,
+    isNew: true,
+  },
+  {
+    name: 'Набор для ухода за бородой Goldworld',
+    nmid: '19502439',
+    rating: ProductCategory.B,
+    ratingNumber: 69,
+    sales_amount_per_month: 31852,
+    discount: 51,
+    price: 6000,
+    price_with_discount: 2968,
+    units_sales_per_month: 10,
+    redemption: 100,
+    turn_over: 0,
+    image: Images.Test.Analytic.Analytic2,
+    isNew: false,
+  },
+  {
+    name: 'Зубная паста Crest Complete Plus Scope+Whitening',
+    nmid: '18663579',
+    rating: ProductCategory.C,
+    ratingNumber: 38,
+    sales_amount_per_month: 16890,
+    discount: 50,
+    price: 1800,
+    price_with_discount: 900,
+    units_sales_per_month: 18,
+    redemption: 100,
+    turn_over: 22,
+    image: Images.Test.Analytic.Analytic3,
+    isNew: true,
+  },
+];

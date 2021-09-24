@@ -1,0 +1,20 @@
+.storage-integration-wrapper {
+  padding: 0 12px;
+
+  .storage-integration-form {
+    background: $blue;
+    width: 100%;
+    height: max-content;
+
+    .storage-integration-title {
+      display: grid;
+      row-gap: 15px;
+    }
+
+    .storage-integration-button {
+      margin-top: 15px;
+      width: 100%;
+      border-radius: 6px;
+    }
+  }
+}

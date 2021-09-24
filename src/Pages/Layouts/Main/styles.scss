@@ -1,0 +1,8 @@
+.main {
+  background: #fff;
+  min-height: calc(100vh - #{$header-height} - #{$footer-height});
+
+  @media (max-width: $content-min-width) {
+    min-height: calc(100vh - #{$header-height} - #{$footer-height} - #{$slider-size});
+  }
+}

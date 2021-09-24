@@ -1,0 +1,25 @@
+.aside-menu-item {
+  display: grid;
+  column-gap: 12px;
+  align-items: center;
+
+  &.aside-menu-item-large {
+    grid-template-columns: repeat(2, auto);
+    justify-content: left;
+  }
+
+  &.aside-menu-item-small {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    margin-left: -10px;
+  }
+
+  .aside-menu-item-icon {
+    min-width: 14px !important;
+    font-size: 17px !important;
+  }
+
+  .aside-menu-item-title {
+    margin-top: 2px;
+  }
+}

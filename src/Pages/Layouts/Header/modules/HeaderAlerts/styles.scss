@@ -1,0 +1,25 @@
+.header-alerts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.header-alerts-icon {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.header-alerts-list {
+  max-height: 343px;
+  min-width: 300px;
+  overflow-y: scroll;
+}
+
+.header-alerts-image {
+  width: 75px;
+  height: 75px;
+  object-fit: contain;
+  border-radius: 10px;
+  margin-right: 10px;
+}

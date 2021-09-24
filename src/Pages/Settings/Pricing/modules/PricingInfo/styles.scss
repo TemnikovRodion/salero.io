@@ -1,0 +1,21 @@
+.pricing-info-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  column-gap: 34px;
+}
+
+.pricing-info-text {
+  text-align: right;
+}
+
+.pricing-info-subscription-stop {
+  display: flex;
+  color: $red;
+  column-gap: 15px;
+  justify-content: center;
+  align-items: center;
+
+  .pricing-info-subscription-stop-text {
+    padding-top: 2px;
+  }
+}

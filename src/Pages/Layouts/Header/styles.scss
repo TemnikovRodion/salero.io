@@ -1,0 +1,24 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 !important;
+  background: #fff !important;
+  width: 100%;
+  height: $header-height !important;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 1px 4px -1px rgb(0 0 0 / 15%);
+}
+
+.header-nav-right,
+.header-nav-left {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  align-items: center;
+}
+
+.header-nav-right {
+  padding: 0 1rem;
+  column-gap: 20px;
+}

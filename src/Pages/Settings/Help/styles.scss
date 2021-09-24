@@ -1,0 +1,40 @@
+.help-header-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #3e79f7;
+  text-align: center;
+  height: 210px;
+
+  .help-header-title {
+    font-size: 3rem;
+    line-height: 1;
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+  }
+
+  .help-header-text {
+    margin-top: 8px;
+  }
+}
+
+.help-body-wrapper {
+  margin: 0 auto;
+  border-radius: 0.625rem;
+  position: relative;
+  top: -70px;
+  width: 93%;
+  padding: 0 9px;
+  margin-top: 1.5rem !important;
+  margin-bottom: 1.5rem !important;
+
+  .help-body-icon {
+    color: $blue;
+  }
+
+  .help-body-text {
+    line-height: 1.8;
+    margin-bottom: 14px;
+  }
+}

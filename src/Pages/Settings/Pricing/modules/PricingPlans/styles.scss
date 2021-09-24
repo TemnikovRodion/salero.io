@@ -1,0 +1,36 @@
+.pricing-plan-item {
+  border: 1px solid #f6f6f6;
+  border-radius: 21px;
+  padding: 1rem;
+  margin: 0 0.5rem;
+
+  .pricing-plan-item-title {
+    display: grid;
+    row-gap: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .pricing-plan-item-price {
+    font-size: 48px;
+    color: $blue;
+    margin-bottom: 1rem;
+  }
+
+  .pricing-plan-item-features {
+    display: grid;
+    row-gap: 8px;
+    margin-bottom: 2rem;
+
+    .pricing-plan-item-feature {
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      justify-content: flex-start;
+      align-items: center;
+      column-gap: 8px;
+    }
+  }
+
+  .pricing-plan-item-button {
+    width: 100%;
+  }
+}

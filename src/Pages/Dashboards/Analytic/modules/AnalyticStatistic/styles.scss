@@ -1,0 +1,16 @@
+.analytic-statistic-title {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 8px;
+
+  .analytic-statistic-sub-title {
+    font-size: 14px;
+  }
+}
+
+.analytic-statistic-text {
+  display: block;
+  padding-left: 70px;
+}

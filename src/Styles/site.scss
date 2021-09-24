@@ -1,0 +1,49 @@
+@import '~antd/dist/antd.css';
+@import './AntdNormalize/global.scss';
+@import '~@fontsource/roboto/400.css';
+@import '~@fontsource/roboto/500.css';
+@import '~@fontsource/roboto/700.css';
+
+*::-webkit-scrollbar {
+  width: $slider-size;
+  height: $slider-size;
+  background-color: #f9f9fd;
+  position: absolute;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: $gray-light;
+}
+
+body {
+  overflow: auto;
+}
+
+#app {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  min-width: $content-min-width;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 12px;
+}

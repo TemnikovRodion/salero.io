@@ -1,0 +1,16 @@
+export const ResponseErrors = {
+  'User with this phone number already exists': 'Пользователь с таким номером телефона уже существует!',
+  'Invalid Email': 'Неверный адрес электронной почты!',
+  'User with this email is deactivated': 'Пользователь с таким адресом электронной почты отключен!',
+  'User with this email already exists': 'Пользователь с таким адресом электронной почты уже существует!',
+  'Email token is not valid': 'Токен подтверждения почты недействителен!',
+  'User already confirmed': 'Пользователь уже подтвержден!',
+  'Email token is broken': 'Токен подтверждения почты сломан!',
+  'There is no such user': 'Пользователь не найден!',
+  'Wrong password or user does not exist': 'Пользователя не найден!',
+  'User does not exist': 'Пользователь не найден!',
+  'Restore account session has expired': 'Срок действия сеанса восстановления учетной записи истек!',
+  'Restore account session does not exist': 'Сеанса восстановления учетной записи не существует!',
+  'User with this email/phone number already exists': 'Пользователь с такой почтой/телефоном уже существует!',
+  'Internal server error': 'Сервер недоступен. Повторите попытку позже!',
+};
