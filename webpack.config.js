@@ -8,16 +8,23 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const webpack = require('webpack');
 
+let isLocaleMode = false;
 let isDevMode = false;
+let isProdMode = false;
 
 // Plugins
 const plugins = () => {
   const base = [];
 
+  let api_host = '';
+  if (isProdMode) api_host = "'https://api.salero.io'";
+  if (isDevMode) api_host = "'http://164.90.202.88:7000'";
+  if (isLocaleMode) api_host = "'http://127.0.0.1:8000'";
+
   base.push(
     new webpack.DefinePlugin({
       APP_NAME: "'Salero'",
-      API_HOST: isDevMode ? "'http://164.90.202.88:7000'" : "'https://api.salero.io'",
+      API_HOST: api_host,
       AUTH_COOKIE_NAME: "'.salero_auth'",
       YM_ACCOUNT: "'72228922'",
       GA_ACCOUNT: "'GTM-PB269L2'",
@@ -118,7 +125,9 @@ const optimization = () => {
 };
 
 module.exports = (env, args) => {
+  isProdMode = env.prod;
   isDevMode = env.dev;
+  isLocaleMode = env.locale;
 
   return {
     mode: 'development',

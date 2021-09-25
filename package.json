@@ -5,6 +5,7 @@
   "main": "index.ts",
   "scripts": {
     "dev": "webpack serve --mode development --env dev --open --config webpack.config.js",
+    "build:locale": "webpack --mode production --env locale --config webpack.config.js",
     "build:test": "webpack --mode production --env dev --config webpack.config.js",
     "build:prod": "webpack --mode production --env prod --config webpack.config.js",
     "prepare": "husky install"
