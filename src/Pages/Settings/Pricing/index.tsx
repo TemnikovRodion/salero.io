@@ -1,8 +1,6 @@
 import React from 'react';
 import { Card } from 'antd';
 import { Title } from '@/Components/_Common';
-import { useSelector } from 'react-redux';
-import { userSelectors } from '@/Reducer/User/selectors';
 import { PricingInfo, PricingPlans } from './modules';
 import { ContentWrapper } from '@/Components';
 import './styles.scss';

@@ -158,7 +158,6 @@ module.exports = (env, args) => {
           test: /\.tsx?$/,
           exclude: /node_modules/,
           use: [
-            { loader: 'cache-loader' },
             { loader: 'thread-loader' },
             {
               loader: 'ts-loader',
