@@ -15,4 +15,4 @@ services:
     container_name: front_locale
     image: front_locale
     ports:
-      - 5000:90
+      - 5001:90
