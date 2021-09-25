@@ -11,5 +11,5 @@ export const financesSummaryTestData: FinanceSummaryModel = {
   storage_cost: 89,
   tax: 10,
   gross_profit: 2440,
-  net_profit: 1520,
+  net_profit: 15201,
 };
