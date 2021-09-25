@@ -1,3 +1,8 @@
+### Переменные ###
+ENV port="80";
+ENV env="test";
+
+
 #####################################
 #### Настройка сборки приложения ####
 #####################################
@@ -11,7 +16,7 @@ COPY . /app
 
 # Запускаем загрузку пакетов npm и сборку проекта
 RUN npm install
-RUN npm run build:test
+RUN npm run build:$env
 
 #####################################
 #### Настройка NGINX ####
@@ -21,8 +26,8 @@ FROM nginx:1.16.0-alpine
 # Копируем данные из папки приложения в NGINX
 COPY --from=builder /app/build /usr/share/nginx/html
 
-# Открывае порт
-EXPOSE 8000
+# Открываем порт
+EXPOSE $port
 
 # Запускаем NGINX
 CMD ["nginx", "-g", "daemon off;"]
