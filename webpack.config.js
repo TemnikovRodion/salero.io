@@ -118,12 +118,11 @@ const optimization = () => {
 };
 
 module.exports = (env, args) => {
-  isDevMode = env?.dev;
+  isDevMode = env.dev;
 
   return {
     mode: 'development',
     entry: {
-      polyfill: '@babel/polyfill',
       index: path.resolve(__dirname, 'src'),
     },
     output: {
