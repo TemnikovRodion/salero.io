@@ -1,7 +1,7 @@
 version: '3'
 services:
   test:
-    build: './test'
+    build: '.'
     container_name: front_test
     image: front_test
     ports:
@@ -10,7 +10,7 @@ services:
       - port=80
       - end=test
   locale:
-    build: './locale'
+    build: '.'
     container_name: front_locale
     image: front_locale
     ports:
