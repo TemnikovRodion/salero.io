@@ -23,7 +23,7 @@ COPY ./nginx/test.conf /etc/nginx/conf.d/test.conf
 COPY --from=builder /app/build /usr/share/nginx/html
 
 # Открываем порт
-EXPOSE 80
+EXPOSE 5000
 
 # Запускаем NGINX
 CMD ["nginx", "-g", "daemon off;"]

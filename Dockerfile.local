@@ -23,7 +23,7 @@ COPY ./nginx/local.conf /etc/nginx/conf.d/local.conf
 COPY --from=builder /app/build /usr/share/nginx/html
 
 # Открываем порт
-EXPOSE 90
+EXPOSE 5001
 
 # Запускаем NGINX
 CMD ["nginx", "-g", "daemon off;"]
