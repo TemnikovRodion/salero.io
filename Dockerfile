@@ -18,7 +18,7 @@ RUN npm install
 FROM nginx:1.16.0-alpine
 
 # Копируем данные из папки приложения в NGINX
-COPY --from=builder /test/build /usr/share/nginx/html
+COPY --from=builder /app/build /usr/share/nginx/html
 
 # Открываем порт
 EXPOSE 80
