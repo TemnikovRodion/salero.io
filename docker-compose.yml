@@ -6,15 +6,11 @@ services:
     image: front_test
     ports:
       - 5000:80
-    environment:
-      - port=80
-      - end=test
+    command: npm run build:test
   locale:
     build: '.'
     container_name: front_locale
     image: front_locale
     ports:
       - 5000:90
-    environment:
-      - port=90
-      - end=locale
+    command: npm run build:locale
