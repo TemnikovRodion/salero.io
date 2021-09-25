@@ -6,14 +6,11 @@ FROM node:12-alpine as builder
 # Устанавливаем рабочую папку в контенере
 WORKDIR /app
 
-# Копируем файл package.json и устанавливаем пакеты npm
-COPY package.json /app/package.json
-RUN npm install
-
-# Копируем остальные файлы в папку app
+# Копируем все файлы в папку app
 COPY . /app
 
-# Запускаем сборку проекта
+# Запускаем загрузку пакетов npm и сборку проекта
+RUN npm install
 RUN npm run build:test
 
 #####################################
