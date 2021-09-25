@@ -2,7 +2,7 @@
   "name": "salero",
   "version": "1.0.0",
   "description": "",
-  "main": "index.ts",
+  "main": "./src/index.ts",
   "scripts": {
     "dev": "webpack serve --mode development --env dev --open --config webpack.config.js",
     "build:locale": "webpack --mode production --env locale --config webpack.config.js",
