@@ -1,16 +1,18 @@
 version: '3'
 services:
   test:
-    build: '.'
-    dockerfile: Dockerfile.test
+    build:
+      context: '.'
+      dockerfile: Dockerfile.test
     container_name: front_test
     image: front_test
     ports:
       - 5000:80
     command: npm run build:test
   locale:
-    build: '.'
-    dockerfile: Dockerfile.locale
+    build:
+      context: '.'
+      dockerfile: Dockerfile.test
     container_name: front_locale
     image: front_locale
     ports:
