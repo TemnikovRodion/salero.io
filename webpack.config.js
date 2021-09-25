@@ -1,7 +1,6 @@
 const path = require('path');
 const autoprefixer = require('autoprefixer');
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
-const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 const TerselPlugin = require('terser-webpack-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -28,16 +27,6 @@ const plugins = () => {
       AUTH_COOKIE_NAME: "'.salero_auth'",
       YM_ACCOUNT: "'72228922'",
       GA_ACCOUNT: "'GTM-PB269L2'",
-    }),
-    new ForkTsCheckerWebpackPlugin({
-      typescript: {
-        configFile: './tsconfig.json',
-        context: './',
-        diagnosticOptions: {
-          semantic: true,
-          syntactic: true,
-        },
-      },
     }),
     new HtmlWebpackPlugin({
       inject: true,
