@@ -8,13 +8,11 @@ services:
     image: front_test
     ports:
       - 5000:80
-    command: npm run build:test
   locale:
     build:
       context: '.'
-      dockerfile: Dockerfile.test
+      dockerfile: Dockerfile.locale
     container_name: front_locale
     image: front_locale
     ports:
       - 5000:90
-    command: npm run build:locale
