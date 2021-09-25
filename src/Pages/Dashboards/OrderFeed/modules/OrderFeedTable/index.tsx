@@ -93,7 +93,7 @@ const OrderFeedTableComponent = ({ isLoading }: Props): React.ReactElement => {
       <Col span={24}>
         <Card>
           <DataTable<OrderFeedModel>
-            rowKey={'order_id'}
+            rowKey={'id'}
             columns={columns}
             dataSource={tableDataSource.filter(
               (item) =>

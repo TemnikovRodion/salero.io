@@ -1,6 +1,7 @@
 import { OrderType } from '@/Models/Enums';
 
 export type OrderFeedModel = {
+  id: number;
   barcode: string;
   date: string;
   delivery_region: string;
