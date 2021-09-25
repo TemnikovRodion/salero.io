@@ -8,10 +8,10 @@ WORKDIR /app
 
 # Копируем файл package.json и устанавливаем пакеты npm
 COPY package.json /app/package.json
-RUN npm install --only=prod
+RUN npm install
 
 # Копируем остальные файлы в папку app
-COPY . /app
+COPY . /app/
 
 # Запускаем сборку проекта
 RUN npm run build:test
