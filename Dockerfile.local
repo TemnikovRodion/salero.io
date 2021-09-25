@@ -19,6 +19,7 @@ RUN npm run build:locale
 FROM nginx:1.16.0-alpine
 
 # Копируем данные из папки приложения в NGINX
+COPY ./nginx/local.conf /etc/nginx/conf.d/local.conf
 COPY --from=builder /app/build /usr/share/nginx/html
 
 # Открываем порт
