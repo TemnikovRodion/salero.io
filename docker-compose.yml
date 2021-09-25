@@ -5,16 +5,16 @@ services:
     container_name: front_test
     image: front_test
     ports:
-      - '5000:80'
+      - 5000:80
     environment:
-      - port="80"
-      - end="test"
+      - port=80
+      - end=test
   locale:
     build: '.'
     container_name: front_locale
     image: front_locale
     ports:
-      - '5000:90'
+      - 5000:90
     environment:
-      - port="90"
-      - end="locale"
+      - port=90
+      - end=locale
