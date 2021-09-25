@@ -11,7 +11,7 @@ services:
   locale:
     build:
       context: '.'
-      dockerfile: Dockerfile.locale
+      dockerfile: Dockerfile.local
     container_name: front_locale
     image: front_locale
     ports:
