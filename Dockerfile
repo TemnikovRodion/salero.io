@@ -10,9 +10,9 @@ WORKDIR /app
 COPY . /app
 
 # Запускаем загрузку пакетов npm и сборку проекта
-ENV env="test";
+ENV env=test;
 RUN npm install
-RUN npm run build:$env
+RUN npm run build:${env}
 
 #####################################
 #### Настройка NGINX ####
@@ -23,8 +23,8 @@ FROM nginx:1.16.0-alpine
 COPY --from=builder /app/build /usr/share/nginx/html
 
 # Открываем порт
-ENV port="80";
-EXPOSE $port
+ENV port=80;
+EXPOSE ${port}
 
 # Запускаем NGINX
 CMD ["nginx", "-g", "daemon off;"]
