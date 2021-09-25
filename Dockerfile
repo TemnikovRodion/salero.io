@@ -21,8 +21,8 @@ FROM nginx:1.16.0-alpine
 # Копируем данные из папки приложения в NGINX
 COPY --from=builder /app/build /usr/share/nginx/html
 
-# Открывае порт 80
-EXPOSE 80
+# Открывае порт
+EXPOSE 8000
 
 # Запускаем NGINX
 CMD ["nginx", "-g", "daemon off;"]
